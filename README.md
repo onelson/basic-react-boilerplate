@@ -12,6 +12,9 @@ Compile results are deposited in `./dist`.
 
 Run `npm run start` for the local dev server.
 
+By default, the dev server will bind to port `8080`, so to view the app 
+in your browser just enter http://localhost:8080 in your address bar.
+
 If you need to pass extra flags to the dev server, to customize host/port for
 example, you can add them like this:
 
