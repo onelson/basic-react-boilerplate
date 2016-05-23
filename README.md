@@ -2,7 +2,8 @@
 
 This version of the basic-react-boilerplate adds redux into the mix.
 If you don't want redux, head on back over to the
-[master branch](https://github.com/onelson/basic-react-boilerplate/tree/master).
+[master](https://github.com/onelson/basic-react-boilerplate/tree/master)
+branch.
 
 This starts with the most straightforward setup, with a single actions, and 
 and reducers module (one of each). Naturally, as your application grows, you
@@ -12,14 +13,6 @@ using singles.
 The redux store will be enhanced with the 
 [Chrome Redux Devtools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
 enhancer if installed _and_ `NODE_ENV` is `development`.
-
-
-This boilerplate sets up a very basic web app with react-router and hot reload
-(when `NODE_ENV` is `development`).
-
-A slightly enhanced version in the
-[redux](https://github.com/onelson/basic-react-boilerplate/tree/redux)
-branch is also available.
 
 Run `npm run build` to compile a dist.
 Compile results are deposited in `./dist`.
