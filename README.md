@@ -1,5 +1,12 @@
 # basic-react-boilerplate
 
+This boilerplate sets up a very basic web app with react-router and hot reload
+(when `NODE_ENV` is `development`).
+
+A slightly enhanced version in the
+[redux](https://github.com/onelson/basic-react-boilerplate/tree/redux)
+branch is also available.
+
 Run `npm run build` to compile a dist.
 Compile results are deposited in `./dist`.
 

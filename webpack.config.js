@@ -70,10 +70,7 @@ module.exports = {
         test: /\.jsx?$/,
         loader: 'babel',
         exclude: /node_modules/,
-        inclide: path.resolve('./src/scripts'),
-        query: {
-          presets: ['es2015', 'react'].concat(LOCAL_DEV ? ['react-hmre'] : [])
-        }
+        inclide: path.resolve('./src/scripts')
       },
       { test: /\.less/,
         loader: ExtractTextPlugin.extract(
