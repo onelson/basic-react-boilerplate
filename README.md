@@ -1,4 +1,18 @@
-# basic-react-boilerplate
+# basic-react-boilerplate (redux edition)
+
+This version of the basic-react-boilerplate adds redux into the mix.
+If you don't want redux, head on back over to the
+[master branch](https://github.com/onelson/basic-react-boilerplate/tree/master).
+
+This starts with the most straightforward setup, with a single actions, and 
+and reducers module (one of each). Naturally, as your application grows, you
+will likely want to split these up into logical groups, but to start I'm just 
+using singles.
+
+The redux store will be enhanced with the 
+[Chrome Redux Devtools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
+enhancer if installed _and_ `NODE_ENV` is `development`.
+
 
 Run `npm run build` to compile a dist.
 Compile results are deposited in `./dist`.

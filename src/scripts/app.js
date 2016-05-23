@@ -6,8 +6,13 @@ import Router from 'react-router/lib/Router';
 import Route from 'react-router/lib/Route';
 import browserHistory from 'react-router/lib/browserHistory';
 
+import Provider from 'react-redux/lib/components/Provider';
+
+import configureStore from './state/index';
 import pages from './pages/index';
 import Navigation from './components/navigation';
+
+const store = configureStore();
 
 const App = React.createClass({
   propTypes: {
@@ -15,6 +20,7 @@ const App = React.createClass({
   },
   render () {
     return (
+    <Provider store={store}>
       <div>
         <header><Navigation/></header>
         <section>
@@ -22,6 +28,7 @@ const App = React.createClass({
         </section>
         <footer>Footer</footer>
       </div>
+    </Provider>
     );
   }
 });
