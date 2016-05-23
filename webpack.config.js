@@ -3,9 +3,6 @@ var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var webpack = require('webpack');
 
-var HOST = process.env.HOST || 'localhost';
-var PORT = process.env.PORT || '3000';
-
 var LOCAL_DEV = process.env.NODE_ENV === 'development' || false;
 if (LOCAL_DEV) { // note: any truthy value will result in this being true.
   console.warn('configuring for local dev');
@@ -27,8 +24,6 @@ var entryPoints = {
 };
 
 module.exports = {
-  HOST: HOST,
-  PORT: PORT,
   entry: entryPoints,
   plugins: [
     definePlugin,
